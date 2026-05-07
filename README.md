@@ -22,12 +22,15 @@ tested on shecan (free plan). so if you can see any of these ips, it'll work for
 - 63.141.252.203
 - 94.130.50.12
 
-## Key details (Ghad0)
+## Key details 
 
 · Code built on all files: The project primarily uses Dockerfile (70.8%) and Shell script (29.2%) to set up a containerized V2Ray/Xray server inside the Codespace.
 · Purpose: Circumvent internet restrictions (tested on "shecan" – an Iranian filtering bypass service).
 · Limitation: Only works if you can access GitHub Codespaces. It does not run on a local machine or regular server.
 · Cost: GitHub offers free Codespace hours (e.g., 120 core-hours/month). The script reminds you to stop the Codespace when not in use.
+
+- Todo
+
 
 
 ## support the main developer
