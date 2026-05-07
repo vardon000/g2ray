@@ -29,32 +29,33 @@ tested on shecan (free plan). so if you can see any of these ips, it'll work for
 · Limitation: Only works if you can access GitHub Codespaces. It does not run on a local machine or regular server.
 · Cost: GitHub offers free Codespace hours (e.g., 120 core-hours/month). The script reminds you to stop the Codespace when not in use.
 
-- Todo
+### Todo
 
-1. Customize the VLESS Configuration
+# VLESS Configuration & Security Checklist
+
+## 1. Customize the VLESS Configuration
 
 The auto-generated config might use default settings. You can modify:
 
-[ ]· Port number (change from 443 to something else)
-[ ]· UUID (generate your own for better security)
-[ ]· Fingerprint & security settings
-[ ]. Or Random
+- [ ] Port number (change from 443 to something else)
+- [ ] UUID (generate your own for better security)
+- [ ] Fingerprint & security settings
+- [ ] Or Random
 
-2. Security Hardening (Recommended)
+## 2. Security Hardening (Recommended)
 
 Since this is unaudited code:
 
-[ ]. Audit all shell scripts for backdoors or data exfiltration
-[ ]· Change default encryption settings
-[ ]· Add a firewall rules to restrict access to your IP only
-[ ]· Remove any telemetry or external pings in the code
+- [ ] Audit all shell scripts for backdoors or data exfiltration
+- [ ] Change default encryption settings
+- [ ] Add firewall rules to restrict access to your IP only
+- [ ] Remove any telemetry or external pings in the code
 
-3. Create a One-click Deploy Button
+## 3. Create a One-click Deploy Button
 
 Add badges to your README for:
 
-[ ]· Deploy to Codespaces
-
+- [ ] Deploy to Codespaces
 
 ## support the main developer
 - [buy me a coffee](https://www.buymeacoffee.com/amiremohamadi)
