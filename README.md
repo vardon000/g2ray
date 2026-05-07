@@ -29,10 +29,6 @@ tested on shecan (free plan). so if you can see any of these ips, it'll work for
 · Limitation: Only works if you can access GitHub Codespaces. It does not run on a local machine or regular server.
 · Cost: GitHub offers free Codespace hours (e.g., 120 core-hours/month). The script reminds you to stop the Codespace when not in use.
 
-Project maturity: Very minimal – no description, no releases, few commits, and only 1 star. Do not trust it for security or anonymity without auditing the actual Docker + Shell code.
-
-
-
 
 ## support the main developer
 - [buy me a coffee](https://www.buymeacoffee.com/amiremohamadi)
