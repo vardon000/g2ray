@@ -31,6 +31,28 @@ tested on shecan (free plan). so if you can see any of these ips, it'll work for
 
 - Todo
 
+1. Customize the VLESS Configuration
+
+The auto-generated config might use default settings. You can modify:
+
+[ ]· Port number (change from 443 to something else)
+[ ]· UUID (generate your own for better security)
+[ ]· Fingerprint & security settings
+[ ]. Or Random
+
+2. Security Hardening (Recommended)
+
+Since this is unaudited code:
+
+[ ]. Audit all shell scripts for backdoors or data exfiltration
+[ ]· Change default encryption settings
+[ ]· Add a firewall rules to restrict access to your IP only
+[ ]· Remove any telemetry or external pings in the code
+
+3. Create a One-click Deploy Button
+
+Add badges to your README for:
+[ ]· Deploy to Codespaces
 
 
 ## support the main developer
