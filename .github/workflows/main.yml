@@ -1,0 +1,31 @@
+name: Run g2ray Installation
+
+on:
+  workflow_dispatch:  # Allows manual trigger from the GitHub UI
+  push:               # Automatically runs on every push to the main branch
+    branches: [ main ]
+
+jobs:
+  install-and-log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'  # Use a recent LTS version of Node.js
+
+      - name: Install dependencies (if any)
+        run: npm ci  # This will be a no-op if you have no dependencies
+
+      - name: Run installation script with logging
+        run: npm start
+
+      - name: Upload log file as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: g2ray-installation-log
+          path: log/log.log
+          if-no-files-found: warn  # Warns but does not fail the workflow
