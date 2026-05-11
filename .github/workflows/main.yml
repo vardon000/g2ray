@@ -1,9 +1,12 @@
 name: Run g2ray Installation
 
 on:
-  workflow_dispatch:  # Allows manual trigger from the GitHub UI
-  push:               # Automatically runs on every push to the main branch
+  workflow_dispatch:
+  push:
     branches: [ main ]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # Opt into Node.js 24 for actions
 
 jobs:
   install-and-log:
@@ -15,10 +18,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'  # Use a recent LTS version of Node.js
+          node-version: '20'
 
       - name: Install dependencies (if any)
-        run: npm ci  # This will be a no-op if you have no dependencies
+        run: npm install   # ← FIXED: uses package.json only, no lockfile required
 
       - name: Run installation script with logging
         run: npm start
@@ -28,4 +31,4 @@ jobs:
         with:
           name: g2ray-installation-log
           path: log/log.log
-          if-no-files-found: warn  # Warns but does not fail the workflow
+          if-no-files-found: warn
