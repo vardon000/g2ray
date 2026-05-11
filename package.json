@@ -1,0 +1,11 @@
+{
+  "name": "g2ray-automated",
+  "version": "1.0.0",
+  "description": "Automated runner for g2ray installation script with logging.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
